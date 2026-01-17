@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "brand_name": "Panadol",
+    "generic_name": "Paracetamol",
+    "description": "Used to treat pain and reduce fever.",
+    "side_effects": ["Nausea", "Stomach pain", "Loss of appetite"],
+    "warning": "Do not exceed the recommended dose. Overdose can cause serious liver damage."
+  },
+  {
+    "id": "2",
+    "brand_name": "Panadol Extra",
+    "generic_name": "Paracetamol and Caffeine",
+    "description": "Provides stronger pain relief than standard paracetamol.",
+    "side_effects": ["Nervousness", "Dizziness", "Sleeplessness"],
+    "warning": "Contains caffeine. Avoid drinking too much coffee or tea when taking this medicine."
+  },
+  {
+    "id": "3",
+    "brand_name": "Ibuprofen",
+    "generic_name": "Ibuprofen",
+    "description": "Used to relieve pain, swelling, and inflammation.",
+    "side_effects": ["Upset stomach", "Heartburn", "Headache"],
+    "warning": "Do not take if you have a history of stomach ulcers or bleeding."
+  },
+  {
+    "id": "4",
+    "brand_name": "Aspirin",
+    "generic_name": "Acetylsalicylic acid",
+    "description": "Used to reduce pain, fever, and inflammation. Also used to prevent blood clots.",
+    "side_effects": ["Stomach irritation", "Heartburn", "Easy bruising"],
+    "warning": "Do not give to children or teenagers with flu-like symptoms, as it can cause a serious condition called Reye's syndrome."
+  },
+  {
+    "id": "5",
+    "brand_name": "Amoxil",
+    "generic_name": "Amoxicillin",
+    "description": "A penicillin-type antibiotic used to treat a wide variety of bacterial infections.",
+    "side_effects": ["Nausea", "Vomiting", "Diarrhea", "Rash"],
+    "warning": "Do not take if you are allergic to penicillin. Complete the full course of treatment."
+  },
+  {
+    "id": "6",
+    "brand_name": "Cipro",
+    "generic_name": "Ciprofloxacin",
+    "description": "An antibiotic used to treat different types of bacterial infections.",
+    "side_effects": ["Nausea", "Diarrhea", "Dizziness", "Headache"],
+    "warning": "May cause tendon swelling or tearing, especially in older adults."
+  },
+  {
+    "id": "7",
+    "brand_name": "Lipitor",
+    "generic_name": "Atorvastatin",
+    "description": "Used to lower cholesterol and triglycerides in the blood.",
+    "side_effects": ["Muscle pain", "Diarrhea", "Upset stomach"],
+    "warning": "Avoid eating foods high in fat or cholesterol. Do not take if you are pregnant."
+  },
+  {
+    "id": "8",
+    "brand_name": "Zoloft",
+    "generic_name": "Sertraline",
+    "description": "An antidepressant used to treat depression, obsessive-compulsive disorder (OCD), and anxiety disorders.",
+    "side_effects": ["Nausea", "Drowsiness", "Dry mouth", "Loss of appetite"],
+    "warning": "May increase suicidal thoughts or actions in some children, teenagers, or young adults."
+  },
+  {
+    "id": "9",
+    "brand_name": "Metformin",
+    "generic_name": "Metformin",
+    "description": "Used to control high blood sugar in people with type 2 diabetes.",
+    "side_effects": ["Nausea", "Vomiting", "Stomach upset", "Diarrhea"],
+    "warning": "Take with a meal to reduce stomach upset. Stop taking and call your doctor if you have signs of lactic acidosis."
+  },
+  {
+    "id": "10",
+    "brand_name": "Benadryl",
+    "generic_name": "Diphenhydramine",
+    "description": "An antihistamine used to relieve symptoms of allergy, hay fever, and the common cold.",
+    "side_effects": ["Drowsiness", "Dizziness", "Dry mouth/nose/throat"],
+    "warning": "May cause marked drowsiness. Avoid alcoholic drinks and be careful when driving or operating machinery."
+  }
+]
