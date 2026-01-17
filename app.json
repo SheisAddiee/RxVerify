@@ -1,5 +1,6 @@
-{
-  "expo": {
+// $schema: https://raw.githubusercontent.com/expo/vscode-expo/schemas/schema/expo-xdl.json
+
+ { "expo": {
     "name": "RxVerify",
     "slug": "RxVerify",
     "version": "1.0.0",
@@ -51,4 +52,4 @@
       "reactCompiler": true
     }
   }
-}
+ }
