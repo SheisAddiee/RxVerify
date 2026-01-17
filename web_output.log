@@ -1,5 +1,4 @@
 
 > rxverify@1.0.0 web
-> expo start --web
+> expo start --web --port 8081
 
-Starting project at /app
