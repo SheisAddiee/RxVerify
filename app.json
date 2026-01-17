@@ -38,6 +38,12 @@
             "backgroundColor": "#000000"
           }
         }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow RxVerify to access your camera to scan medicine labels."
+        }
       ]
     ],
     "experiments": {
