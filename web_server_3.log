@@ -1,0 +1,10 @@
+
+> rxverify@1.0.0 web
+> expo start --web --port 8081
+
+Starting project at /app
+Starting Metro Bundler
+Waiting on http://localhost:8081
+Logs for your project will appear below.
+Web Bundled 12245ms (node_modules/expo-router/entry.js)
+ LOG  [web] Logs will appear in the browser console

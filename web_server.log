@@ -1,0 +1,46 @@
+
+> rxverify@1.0.0 web
+> expo start --web --port 8081
+
+Starting project at /app
+Starting Metro Bundler
+Waiting on http://localhost:8081
+Logs for your project will appear below.
+Web Bundling failed 24265ms (node_modules/expo-router/entry.js)
+error: app/(tabs)/_layout.tsx: /app/app/(tabs)/_layout.tsx: Use process(css).then(cb) to work with async plugins
+Error: ENOENT: no such file or directory, open '/app/node_modules/@expo/server/src/index.ts'
+    at Object.readFileSync (node:fs:441:20)
+    at getCodeFrame (/app/node_modules/metro/src/Server.js:949:18)
+    at Server._symbolicate (/app/node_modules/metro/src/Server.js:1026:22)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at Server._processRequest (/app/node_modules/metro/src/Server.js:419:7) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/app/node_modules/@expo/server/src/index.ts'
+}
+Error: ENOENT: no such file or directory, open '/app/node_modules/@expo/server/src/vendor/http.ts'
+    at Object.readFileSync (node:fs:441:20)
+    at getCodeFrame (/app/node_modules/metro/src/Server.js:949:18)
+    at Server._symbolicate (/app/node_modules/metro/src/Server.js:1026:22)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at Server._processRequest (/app/node_modules/metro/src/Server.js:419:7) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/app/node_modules/@expo/server/src/vendor/http.ts'
+}
+
+Metro error: app/(tabs)/_layout.tsx: /app/app/(tabs)/_layout.tsx: Use process(css).then(cb) to work with async plugins
+
+
+Call Stack
+  MetroBundlerDevServer.getStaticResourcesAsync (node_modules/@expo/cli/src/start/server/metro/MetroBundlerDevServer.ts:294:13)
+  processTicksAndRejections (node:internal/process/task_queues)
+  MetroBundlerDevServer.getStaticPageAsync (node_modules/@expo/cli/src/start/server/metro/MetroBundlerDevServer.ts:351:52)
+  getHtml (node_modules/@expo/cli/src/start/server/metro/createServerRouteMiddleware.ts:78:31)
+  handler (node_modules/@expo/server/src/index.ts:149:26)
+  <unknown> (node_modules/@expo/server/src/vendor/http.ts:36:24)
+λ Bundling failed 25568ms (node_modules/expo-router/node/render.js)
+error: app/(tabs)/_layout.tsx: /app/app/(tabs)/_layout.tsx: Use process(css).then(cb) to work with async plugins
+Web Bundled 5677ms (node_modules/expo-router/_error.js)

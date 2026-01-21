@@ -1,0 +1,33 @@
+
+> rxverify@1.0.0 web
+> expo start --web --port 8081
+
+Starting project at /app
+Starting Metro Bundler
+Waiting on http://localhost:8081
+Logs for your project will appear below.
+λ Bundled 6254ms (node_modules/expo-router/node/render.js)
+Web Bundled 7050ms (node_modules/expo-router/entry.js)
+
+Metro error: Worker is not defined
+
+[0m [90m 44 |[39m     }
+ [90m 45 |[39m     [36mconst[39m blob [33m=[39m [36mnew[39m [33mBlob[39m(stringifiedFn[33m,[39m { type[33m:[39m [32m'text/javascript'[39m })[33m;[39m
+[31m[1m>[22m[39m[90m 46 |[39m     [36mconst[39m worker [33m=[39m [36mnew[39m [33mWorker[39m([33mURL[39m[33m.[39mcreateObjectURL(blob))[33m;[39m
+ [90m    |[39m                    [31m[1m^[22m[39m
+ [90m 47 |[39m     [90m// First-In First-Out queue of promises[39m
+ [90m 48 |[39m     [36mconst[39m promises [33m=[39m [][33m;[39m
+ [90m 49 |[39m     worker[33m.[39monmessage [33m=[39m (e) [33m=>[39m promises[33m.[39mshift()[33m?[39m[33m.[39mresolve(e[33m.[39mdata)[33m;[39m[0m
+
+Call Stack
+  createWorkerAsyncFunction (node_modules/expo-camera/build/useWebQRScanner.js:46:20)
+  factory (node_modules/expo-camera/build/useWebQRScanner.js:57:16)
+  loadModuleImplementation (node_modules/metro-runtime/src/polyfills/require.js:277:5)
+  guardedLoadModule (node_modules/metro-runtime/src/polyfills/require.js:184:12)
+  _$$_REQUIRE (node_modules/metro-runtime/src/polyfills/require.js:92:7)
+  factory (node_modules/expo-camera/build/ExpoCamera.web.js:10)
+  loadModuleImplementation (node_modules/metro-runtime/src/polyfills/require.js:277:5)
+  guardedLoadModule (node_modules/metro-runtime/src/polyfills/require.js:184:12)
+  _$$_REQUIRE (node_modules/metro-runtime/src/polyfills/require.js:92:7)
+  <unknown> (node_modules/expo-camera/build/Camera.js:4)
+Web Bundled 412ms (node_modules/expo-router/_error.js)
