@@ -54,41 +54,40 @@ export default function ScannerScreen() {
 
   return (
     <View style={styles.container}>
-      <CameraView style={styles.camera} facing={facing} ref={cameraRef}>
-        <View style={styles.overlay}>
-             <View style={styles.header}>
-                 <TouchableOpacity onPress={() => router.back()} style={styles.closeButton}>
-                     <FontAwesome name="close" size={24} color="#fff" />
-                 </TouchableOpacity>
-                 <TouchableOpacity onPress={toggleCameraFacing} style={styles.flipButton}>
-                     <FontAwesome name="refresh" size={24} color="#fff" />
-                 </TouchableOpacity>
-             </View>
-
-             <View style={styles.topOverlay}>
-                 <Text style={styles.overlayText}>Align medication packaging within frame</Text>
-             </View>
-
-             <View style={styles.middleOverlay}>
-                 <View style={styles.scanFrame}>
-                    <View style={styles.frameCornerTopLeft} />
-                    <View style={styles.frameCornerTopRight} />
-                    <View style={styles.frameCornerBottomLeft} />
-                    <View style={styles.frameCornerBottomRight} />
-                 </View>
-             </View>
-
-             <View style={styles.bottomOverlay}>
-                 <TouchableOpacity style={styles.captureButton} onPress={takePicture} disabled={processing}>
-                     {processing ? (
-                         <ActivityIndicator size="large" color="#000" />
-                     ) : (
-                         <View style={styles.captureInner} />
-                     )}
-                 </TouchableOpacity>
-             </View>
+      <CameraView style={styles.camera} facing={facing} ref={cameraRef} />
+      <View style={styles.overlay}>
+        <View style={styles.header}>
+            <TouchableOpacity onPress={() => router.back()} style={styles.closeButton}>
+                <FontAwesome name="close" size={24} color="#fff" />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={toggleCameraFacing} style={styles.flipButton}>
+                <FontAwesome name="refresh" size={24} color="#fff" />
+            </TouchableOpacity>
         </View>
-      </CameraView>
+
+        <View style={styles.topOverlay}>
+            <Text style={styles.overlayText}>Align medication packaging within frame</Text>
+        </View>
+
+        <View style={styles.middleOverlay}>
+            <View style={styles.scanFrame}>
+              <View style={styles.frameCornerTopLeft} />
+              <View style={styles.frameCornerTopRight} />
+              <View style={styles.frameCornerBottomLeft} />
+              <View style={styles.frameCornerBottomRight} />
+            </View>
+        </View>
+
+        <View style={styles.bottomOverlay}>
+            <TouchableOpacity style={styles.captureButton} onPress={takePicture} disabled={processing}>
+                {processing ? (
+                    <ActivityIndicator size="large" color="#000" />
+                ) : (
+                    <View style={styles.captureInner} />
+                )}
+            </TouchableOpacity>
+        </View>
+      </View>
     </View>
   );
 }
@@ -108,7 +107,11 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   overlay: {
-    flex: 1,
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
     backgroundColor: 'transparent',
     justifyContent: 'space-between',
   },
