@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "names": ["Panadol", "Paracetamol", "Tylenol"],
+    "description": "Pain reliever and fever reducer.",
+    "dosage": "Adults: 500mg-1000mg every 4-6 hours. Do not exceed 4000mg in 24 hours.",
+    "interactions": ["Alcohol", "Warfarin", "Isoniazid"],
+    "warnings": "Liver damage if overdose."
+  },
+  {
+    "id": "2",
+    "names": ["Amoxicillin", "Amoxil"],
+    "description": "Antibiotic used to treat bacterial infections.",
+    "dosage": "500mg every 8 hours or as prescribed.",
+    "interactions": ["Methotrexate", "Warfarin", "Allopurinol"],
+    "warnings": "Do not use if allergic to penicillin."
+  },
+  {
+    "id": "3",
+    "names": ["Ibuprofen", "Advil", "Motrin"],
+    "description": "Nonsteroidal anti-inflammatory drug (NSAID).",
+    "dosage": "Adults: 200mg-400mg every 4-6 hours.",
+    "interactions": ["Aspirin", "Blood thinners", "Alcohol", "Lithium"],
+    "warnings": "Stomach bleeding risk."
+  },
+  {
+    "id": "4",
+    "names": ["Aspirin", "Bayer"],
+    "description": "Pain reliever, fever reducer, and anti-inflammatory.",
+    "dosage": "325mg-650mg every 4 hours.",
+    "interactions": ["Ibuprofen", "Blood thinners", "Alcohol"],
+    "warnings": "Reye's syndrome in children, stomach bleeding."
+  },
+  {
+    "id": "5",
+    "names": ["Lipitor", "Atorvastatin"],
+    "description": "Statin used to lower cholesterol.",
+    "dosage": "10mg-80mg once daily.",
+    "interactions": ["Grapefruit juice", "Certain antibiotics", "Antifungals"],
+    "warnings": "Muscle pain or weakness."
+  }
+]
