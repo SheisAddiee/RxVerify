@@ -9,6 +9,7 @@ export default function ScannerScreen() {
   const [facing, setFacing] = useState<CameraType>('back');
   const [permission, requestPermission] = useCameraPermissions();
   const [processing, setProcessing] = useState(false);
+  const [isCameraReady, setIsCameraReady] = useState(false);
   const cameraRef = useRef<CameraView>(null);
 
   if (!permission) {
@@ -27,7 +28,7 @@ export default function ScannerScreen() {
   }
 
   const takePicture = async () => {
-    if (cameraRef.current && !processing) {
+    if (cameraRef.current && !processing && isCameraReady) {
         setProcessing(true);
         try {
             const photo = await cameraRef.current.takePictureAsync();
@@ -54,7 +55,13 @@ export default function ScannerScreen() {
 
   return (
     <View style={styles.container}>
-      <CameraView style={styles.camera} facing={facing} ref={cameraRef}>
+      <CameraView
+        style={styles.camera}
+        facing={facing}
+        ref={cameraRef}
+        onCameraReady={() => setIsCameraReady(true)}
+        onMountError={(error) => console.error("Camera mount error:", error)}
+      >
         <View style={styles.overlay}>
              <View style={styles.header}>
                  <TouchableOpacity onPress={() => router.back()} style={styles.closeButton}>
@@ -79,7 +86,11 @@ export default function ScannerScreen() {
              </View>
 
              <View style={styles.bottomOverlay}>
-                 <TouchableOpacity style={styles.captureButton} onPress={takePicture} disabled={processing}>
+                 <TouchableOpacity
+                   style={[styles.captureButton, !isCameraReady && { opacity: 0.5 }]}
+                   onPress={takePicture}
+                   disabled={processing || !isCameraReady}
+                 >
                      {processing ? (
                          <ActivityIndicator size="large" color="#000" />
                      ) : (
